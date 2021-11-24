@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;800&display=swap");
+
 *,
 *::after,
 *::before {
@@ -6,9 +8,49 @@
 
 :root {
   /* Colors */
-  --color-primary: white;
+  --color-primary: #3b2547;
+  --color-primary-accent: #ec6e87;
+  --color-background: #fff;
+  --color-text-main: #fff;
+  --color-text-additional: #9a9696;
+
+  /* Font 
+  font-weight 800 (extra-bold) is used for headlines, font-weight 600 (semi-bold) is used for subheadlines, font-weight 400 (regular) is used for all other texts.
+  */
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 body {
   margin: 0;
+}
+
+h1 {
+  font-weight: 800;
+  color: var(--color-primary-accent);
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-weight: 600;
+  color: var(--color-primary);
+  font-size: 2rem;
+}
+
+h3 {
+  font-weight: 400;
+  color: var(--text-main);
+  font-size: 1.875rem;
+}
+
+h4 {
+  font-weight: 400;
+  color: var(--color-text-main);
+  font-size: 1.5rem;
+}
+
+p {
+  font-weight: 400;
+  color: var(--color-text-main);
+  font-size: 1.25rem;
 }
