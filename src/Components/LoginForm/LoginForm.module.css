@@ -4,10 +4,18 @@
   width: 75%;
 }
 
+.input {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+}
+
 .submit {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: end;
+  place-items: center;
+  gap: 3rem;
+  padding-top: 3rem;
 }
 
 .login {
@@ -27,6 +35,7 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   color: var(--color-text-additional);
+  width: 100%;
 }
 
 .password {
@@ -34,4 +43,11 @@
   padding-left: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  width: 100%;
+}
+
+.logintext {
+  font-weight: 800;
+  font-size: 2.8rem;
+  color: var(--color-primary);
 }
