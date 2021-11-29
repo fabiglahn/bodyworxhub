@@ -1,6 +1,6 @@
 import express from "express";
 // import path from "path";
-import { connectDatabase, getUserCollection } from "../src/utils/database";
+import { connectDatabase, getUserCollection } from "./database";
 import dotenv from "dotenv";
 dotenv.config();
 
