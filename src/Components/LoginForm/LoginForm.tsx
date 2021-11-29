@@ -12,10 +12,10 @@ function LoginForm() {
           className={styles.password}
         />
       </div>
-      <div className={styles.submit}>
-        <span className={styles.logintext}>login</span>
+      <label className={styles.submit}>
+        <input type="submit" value="login" className={styles.logintext} />
         <input type="submit" value="→" className={styles.login} />
-      </div>
+      </label>
     </form>
   );
 }
