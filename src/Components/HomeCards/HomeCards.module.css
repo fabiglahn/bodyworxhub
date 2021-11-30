@@ -1,0 +1,35 @@
+.cards {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  width: 100%;
+  padding: 1rem;
+  place-items: center;
+}
+
+.singlecard {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  background-color: var(--color-primary);
+  border-radius: 1.5rem;
+  width: 90%;
+  height: 90%;
+}
+
+.categories {
+  color: var(--color-text-main);
+  grid-column: 1/2;
+  grid-row: 1/2;
+  padding-left: 0.75rem;
+}
+
+.icons {
+  fill: white;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: center;
+  justify-self: center;
+  width: 80%;
+  height: 80%;
+}
