@@ -25,11 +25,10 @@
 }
 
 .icons {
-  fill: white;
+  fill: var(--color-text-main);
   grid-column: 2/3;
   grid-row: 2/3;
-  align-self: center;
-  justify-self: center;
+  place-self: center;
   width: 80%;
   height: 80%;
 }

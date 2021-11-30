@@ -3,7 +3,7 @@ import styles from "./HomeCards.module.css";
 
 function HomeCards() {
   return (
-    <article className={styles.cards}>
+    <div className={styles.cards}>
       <div className={styles.singlecard}>
         <h4 className={styles.categories}>outdoor schedule</h4>
         <svg
@@ -59,7 +59,7 @@ function HomeCards() {
           </g>
         </svg>
       </div>
-    </article>
+    </div>
   );
 }
 
