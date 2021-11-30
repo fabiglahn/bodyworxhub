@@ -1,0 +1,8 @@
+.navigationBar {
+  background-color: var(--color-primary);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  place-items: center;
+  border-radius: 1.5rem 1.5rem 0 0;
+  height: 50px;
+}
