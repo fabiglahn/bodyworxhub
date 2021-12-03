@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
-  width: 100%;
+  width: 100vw;
+  height: 100vw;
   padding: 1rem;
   place-items: center;
 }
@@ -22,6 +23,7 @@
   grid-column: 1/2;
   grid-row: 1/2;
   padding-left: 0.75rem;
+  align-self: start;
 }
 
 .icons {
