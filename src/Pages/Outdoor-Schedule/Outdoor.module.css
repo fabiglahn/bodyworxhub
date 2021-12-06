@@ -15,10 +15,12 @@
   font-size: 2.5rem;
   color: var(--color-primary);
   font-weight: 800;
+  text-transform: uppercase;
 }
 
 .headlinesecond {
   font-size: 2.5rem;
   color: var(--color-primary-accent);
   font-weight: 800;
+  text-transform: uppercase;
 }
