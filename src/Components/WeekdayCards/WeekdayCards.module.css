@@ -16,6 +16,7 @@
   width: 100%;
   place-items: center;
   position: relative;
+  text-transform: uppercase;
 }
 
 .singlecard::after {
