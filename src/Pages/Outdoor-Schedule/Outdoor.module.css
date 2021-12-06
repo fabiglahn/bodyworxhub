@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  grid-template-rows: 15% 1fr 10%;
+  height: 100vh;
+}
+
+.headline {
+  justify-self: center;
+  align-self: end;
+  padding: 0;
+  margin: 0;
+}
+
+.headlinefirst {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  font-weight: 800;
+}
+
+.headlinesecond {
+  font-size: 2.5rem;
+  color: var(--color-primary-accent);
+  font-weight: 800;
+}
