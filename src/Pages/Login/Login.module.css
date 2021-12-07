@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-image: url("../../Assets/background_opacity.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  place-items: center;
+  align-items: start;
+  padding: 3rem;
+}
+
+.logo {
+  width: 80vw;
+}
