@@ -6,6 +6,6 @@ POST http://localhost:3001/api/login HTTP/1.1
 Content-Type: application/json
 
 {
-    "email": "abc@xyz.de",
-    "password": "123456"
+    "email": "anna@wohlrab.de",
+    "password": "dani"
 }

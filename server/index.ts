@@ -12,12 +12,6 @@ if (!process.env.MONGODB_URI) {
   throw new Error("No MongoDB URI available");
 }
 
-connectDatabase(process.env.MONGODB_URI).then(() =>
-  app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
-  })
-);
-
 // Get all users
 app.get("/api/users", async (_request, response) => {
   const userCollection = getUserCollection();
@@ -32,12 +26,6 @@ app.get("/api/hello", (_request, response) => {
 
 // Serve production bundle
 app.use(express.static("dist"));
-
-connectDatabase(process.env.MONGODB_URI).then(() =>
-  app.listen(port, () => {
-    console.log(`Server is running at http://localhost:${port}`);
-  })
-);
 
 // LOGIN a user
 app.post("/api/login", async (request, response) => {
@@ -55,3 +43,9 @@ app.post("/api/login", async (request, response) => {
       .send("Login failed. Check if email and password is correct");
   }
 });
+
+connectDatabase(process.env.MONGODB_URI).then(() =>
+  app.listen(port, () => {
+    console.log(`Server is running at http://localhost:${port}`);
+  })
+);
