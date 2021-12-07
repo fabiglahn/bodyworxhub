@@ -62,3 +62,25 @@
   color: var(--color-text-additional);
   opacity: 1;
 }
+
+.forgot {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+.register {
+  display: grid;
+  place-items: center;
+  padding-top: 3rem;
+}
+
+.account {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+}
+
+.here {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  font-weight: 600;
+}

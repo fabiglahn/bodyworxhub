@@ -35,6 +35,7 @@ function LoginForm() {
           className={styles.password}
           onChange={(event) => setPassword(event.target.value)}
         />
+        <span className={styles.forgot}>Forgot your password?</span>
       </div>
       <label className={styles.submit}>
         <input
@@ -50,6 +51,10 @@ function LoginForm() {
           disabled={!validateForm()}
         />
       </label>
+      <div className={styles.register}>
+        <span className={styles.account}>You don’t have an account yet?</span>
+        <span className={styles.here}>Register here.</span>
+      </div>
     </form>
   );
 }
