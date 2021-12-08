@@ -1,0 +1,28 @@
+.container {
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+
+.stripe {
+  background-color: var(--color-primary-accent);
+  width: 100vw;
+  height: 3.5rem;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  position: relative;
+  border-radius: 50%;
+  max-width: 40%;
+  height: auto;
+  top: 15px;
+}
+
+.camera {
+  position: relative;
+  bottom: 140px;
+  left: 62px;
+}
