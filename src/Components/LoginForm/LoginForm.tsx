@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import styles from "./LoginForm.module.css";
 import { verifyLogin } from "../../utils/api";
 import { User } from "../../types";
+import { useNavigate } from "react-router-dom";
 
 function LoginForm() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -12,6 +14,8 @@ function LoginForm() {
 
     const user: Partial<User> = { email, password };
     await verifyLogin(user);
+    navigate("/home");
+    console.log(user);
   }
 
   function validateForm() {

@@ -1,8 +1,18 @@
+import { useNavigate } from "react-router";
+
 export default function ProfileIcon(
   props: React.SVGProps<SVGPathElement>
 ): JSX.Element {
+  const navigate = useNavigate();
+
   return (
-    <svg fill="none" width="25" height="25" viewBox="0 0 36 36">
+    <svg
+      onClick={() => navigate("/profile")}
+      fill="none"
+      width="25"
+      height="25"
+      viewBox="0 0 36 36"
+    >
       <g>
         <path
           d="M16 0C7.163 0 0 7.163 0 16s7.163 16 16 16 16-7.163 16-16S24.837 0 16 0zm0 31C7.716 31 1 24.284 1 16 1 7.716 7.716 1 16 1s15 6.716 15 15c0 8.284-6.716 15-15 15z"

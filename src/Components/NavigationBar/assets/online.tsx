@@ -1,8 +1,18 @@
+import { useNavigate } from "react-router";
+
 export default function OnlineIcon(
   props: React.SVGProps<SVGPathElement>
 ): JSX.Element {
+  const navigate = useNavigate();
+
   return (
-    <svg width="25" height="25" fill="none" viewBox="0 0 16 16">
+    <svg
+      onClick={() => navigate("/online")}
+      width="25"
+      height="25"
+      fill="none"
+      viewBox="0 0 16 16"
+    >
       <path
         d="m 4.8125,0.501953 c -1,0 -1.8125,0.8125 -1.8125,1.8125 L 3,14.1875 C 3,15.1875 3.8125,16 4.8125,16 l 5.875,0 c 1,0 1.8125,-0.8125 1.8125,-1.8125 l 0,-11.873047 c 0,-1 -0.8125,-1.8125 -1.8125,-1.8125 l -5.875,0 z m 0,0.5 5.875,0 c 0.724,0 1.3125,0.5885 1.3125,1.3125 l 0,10.1875 -8.5,0 0,-10.1875 c 0,-0.725 0.5885,-1.3125 1.3125,-1.3125 z m 1.921875,1.5214844 0,0.5 2.015625,0 0,-0.5 -2.015625,0 z M 3.5,13.001953 l 8.500001,0 0,1.1875 c 0,0.724 -0.5885,1.3125 -1.3125,1.3125 l -5.875001,0 c -0.724,0 -1.3125,-0.5885 -1.3125,-1.3125 l 0,-1.1875 z"
         {...props}

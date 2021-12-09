@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Home.module.css";
 import HomeCards from "../../Components/HomeCards/HomeCards";
+import NavigationBar from "../../Components/NavigationBar/NavigationBar";
 
 function Home(): JSX.Element {
   return (
@@ -10,6 +11,7 @@ function Home(): JSX.Element {
         <span className={styles.name}>Anna!</span>
       </p>
       <HomeCards />
+      <NavigationBar activeLink={"home"} />
     </div>
   );
 }
