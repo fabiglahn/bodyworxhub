@@ -5,6 +5,7 @@
   width: 80%;
   gap: 0.5rem;
   padding: 1rem 2rem;
+  justify-self: center;
 }
 
 .coursename {
