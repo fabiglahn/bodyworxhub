@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 15% 1fr 1fr;
+}
+
+.headline {
+  text-transform: uppercase;
+}

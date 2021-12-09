@@ -1,28 +1,28 @@
 .container {
   display: grid;
   place-items: center;
-  margin: 0;
-}
-
-.stripe {
+  margin-top: 5rem;
   background-color: var(--color-primary-accent);
-  width: 100vw;
   height: 3.5rem;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
+  position: relative;
+  align-content: center;
 }
 
-img {
+.avatar {
   position: relative;
+}
+
+.profilepic {
   border-radius: 50%;
-  max-width: 40%;
-  height: auto;
-  top: 15px;
+  z-index: 10;
+  width: 10rem;
+  object-fit: cover;
 }
 
 .camera {
-  position: relative;
-  bottom: 140px;
-  left: 62px;
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  right: 0;
 }
