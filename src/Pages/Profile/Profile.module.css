@@ -6,4 +6,43 @@
 
 .headline {
   text-transform: uppercase;
+  color: var(--color-primary-accent);
+  font-weight: 800;
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+
+.name {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding-top: 1rem;
+}
+
+.booked {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  row-gap: 0.5rem;
+  column-gap: 2rem;
+}
+
+.stats_headline {
+  color: var(--color-text-additional);
+  font-size: 1.25rem;
+}
+
+.stats_numbers {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 1.25rem;
 }
