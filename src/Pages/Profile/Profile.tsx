@@ -6,7 +6,7 @@ import styles from "./Profile.module.css";
 
 function Profile(): JSX.Element {
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <h2 className={styles.headline}>Profile</h2>
       <ProfilePicture />
       <h3 className={styles.name}>Anna Wohlrab</h3>
@@ -19,7 +19,7 @@ function Profile(): JSX.Element {
       <h4 className={styles.booked}>Booked classes</h4>
       <ClassCard />
       <NavigationBar activeLink={"profile"} />
-    </div>
+    </article>
   );
 }
 

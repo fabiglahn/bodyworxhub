@@ -23,8 +23,7 @@
   color: var(--color-primary);
   font-weight: 600;
   font-size: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
+  margin: 2rem 0.75rem;
 }
 
 .stats {
