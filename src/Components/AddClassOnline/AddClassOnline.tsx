@@ -5,7 +5,7 @@ import Plus from "./assets/plus.svg";
 
 const classes = [
   { name: "abs & booty camp", time: " 13:00", place: " online" },
-  { name: "quick weight circuit", time: " 18:00", place: " online" },
+  { name: "weight circuit", time: " 18:00", place: " online" },
 ];
 
 export default function AddClassOnline() {
