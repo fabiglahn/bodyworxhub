@@ -4,9 +4,11 @@ import styles from "./WeekdayCards.module.css";
 function WeekdayCards() {
   return (
     <div className={styles.cards}>
-      <div className={styles.singlecard}>
-        <h4 className={styles.day}>Monday</h4>
-      </div>
+      <a href="../../Pages/Outdoor-Monday/MondayOutdoor.tsx">
+        <div className={styles.singlecard}>
+          <h4 className={styles.day}>Monday</h4>
+        </div>
+      </a>
       <div className={styles.singlecard}>
         <h4 className={styles.day}>Tuesday</h4>
       </div>
