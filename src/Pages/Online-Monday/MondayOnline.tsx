@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./MondayOnline.module.css";
-import AddClass from "../../Components/AddClass/AddClass";
+import AddClassOnline from "../../Components/AddClassOnline/AddClassOnline";
 import NavigationBar from "../../Components/NavigationBar/NavigationBar";
 
 function MondayOnline(): JSX.Element {
@@ -14,8 +14,11 @@ function MondayOnline(): JSX.Element {
         <span className={styles.location}>Online</span>
       </p>
       <div className={styles.classes}>
-        <AddClass />
+        <AddClassOnline />
       </div>
+      <a href="/monday-outdoor" className={styles.outdoorLink}>
+        change to outdoor classes
+      </a>
       <NavigationBar activeLink={"online"} />
     </div>
   );

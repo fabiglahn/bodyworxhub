@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-rows: 15% 1fr 1fr;
+  grid-template-rows: 15% 1fr 10% 1fr;
   height: 100vh;
   overflow: scroll;
   scroll-behavior: smooth;
@@ -27,7 +27,6 @@
 }
 
 .classes {
-  padding-bottom: 4rem;
   display: grid;
   place-items: center;
 }
@@ -36,4 +35,11 @@
   color: var(--color-primary-accent);
   font-size: 2.5rem;
   text-decoration: none;
+}
+
+.outdoorLink {
+  display: grid;
+  place-items: center;
+  color: var(--color-primary);
+  font-size: 1.5rem;
 }
