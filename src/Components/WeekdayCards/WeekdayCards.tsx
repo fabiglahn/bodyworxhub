@@ -4,7 +4,7 @@ import styles from "./WeekdayCards.module.css";
 function WeekdayCards() {
   return (
     <div className={styles.cards}>
-      <a href="../../Pages/Outdoor-Monday/MondayOutdoor.tsx">
+      <a href="/monday-outdoor">
         <div className={styles.singlecard}>
           <h4 className={styles.day}>Monday</h4>
         </div>
