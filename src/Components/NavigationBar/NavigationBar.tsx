@@ -12,20 +12,24 @@ type NavigationBarProps = {
 export default function NavigationBar({ activeLink }: NavigationBarProps) {
   return (
     <nav className={styles.navigationBar}>
-      <HomeIcon
-        fill={
-          activeLink === "home"
-            ? "var(--color-primary-accent)"
-            : "var(--color-text-main)"
-        }
-      />
-      <OutdoorIcon
-        fill={
-          activeLink === "outdoor"
-            ? "var(--color-primary-accent)"
-            : "var(--color-text-main)"
-        }
-      />
+      <a href="./home">
+        <HomeIcon
+          fill={
+            activeLink === "home"
+              ? "var(--color-primary-accent)"
+              : "var(--color-text-main)"
+          }
+        />
+      </a>
+      <a href="./outdoor">
+        <OutdoorIcon
+          fill={
+            activeLink === "outdoor"
+              ? "var(--color-primary-accent)"
+              : "var(--color-text-main)"
+          }
+        />
+      </a>
       <LocationsIcon
         fill={
           activeLink === "locations"
@@ -33,20 +37,24 @@ export default function NavigationBar({ activeLink }: NavigationBarProps) {
             : "var(--color-text-main)"
         }
       />
-      <OnlineIcon
-        fill={
-          activeLink === "online"
-            ? "var(--color-primary-accent)"
-            : "var(--color-text-main)"
-        }
-      />
-      <ProfileIcon
-        fill={
-          activeLink === "profile"
-            ? "var(--color-primary-accent)"
-            : "var(--color-text-main)"
-        }
-      />
+      <a href="./online">
+        <OnlineIcon
+          fill={
+            activeLink === "online"
+              ? "var(--color-primary-accent)"
+              : "var(--color-text-main)"
+          }
+        />
+      </a>
+      <a href="./profile">
+        <ProfileIcon
+          fill={
+            activeLink === "profile"
+              ? "var(--color-primary-accent)"
+              : "var(--color-text-main)"
+          }
+        />
+      </a>
     </nav>
   );
 }
