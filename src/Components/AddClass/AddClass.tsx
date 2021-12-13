@@ -15,20 +15,20 @@ export default function AddClass() {
   return (
     <>
       {classes.map(({ name, time, place }) => (
-        <article className={styles.singlecard} key={name}>
-          <h4 className={styles.coursename}>{name}</h4>
-          <div className={styles.withbutton}>
-            <div className={styles.allinfo}>
+        <article className={styles.singleCard} key={name}>
+          <h4 className={styles.courseName}>{name}</h4>
+          <div className={styles.withButton}>
+            <div className={styles.allInfo}>
               <span className={styles.info}>
-                <img src={Clock} />
+                <img src={Clock} alt="Clock Icon" />
                 {time}
               </span>
               <span className={styles.info}>
-                <img src={Location} /> {place}
+                <img src={Location} alt="Location Icon" /> {place}
               </span>
             </div>
             <a href="./profile">
-              <img src={Plus} />
+              <img src={Plus} alt="Add Icon" />
             </a>
           </div>
         </article>
