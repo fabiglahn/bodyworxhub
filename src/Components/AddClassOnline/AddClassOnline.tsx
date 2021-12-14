@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import styles from "./AddClassOnline.module.css";
-import Clock from "./assets/clock.svg";
-import Location from "./assets/location.svg";
-import Plus from "./assets/plus.svg";
+import clock from "./assets/clock.svg";
+import location from "./assets/location.svg";
+import plus from "./assets/plus.svg";
 
 const classes = [
   { name: "abs & booty camp", time: " 13:00", place: " online" },
@@ -17,16 +18,16 @@ export default function AddClassOnline() {
           <div className={styles.withButton}>
             <div className={styles.allInfo}>
               <span className={styles.info}>
-                <img src={Clock} alt="Clock Icon" />
+                <img src={clock} alt="start time" />
                 {time}
               </span>
               <span className={styles.info}>
-                <img src={Location} alt="Location Icon" /> {place}
+                <img src={location} alt="location" /> {place}
               </span>
             </div>
-            <a href="./profile">
-              <img src={Plus} alt="Add Icon" />
-            </a>
+            <Link to="/profile">
+              <img src={plus} alt="add this class" />
+            </Link>
           </div>
         </article>
       ))}
