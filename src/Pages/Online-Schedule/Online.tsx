@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Online.module.css";
+import WeekdayCards from "../../Components/WeekdayCards/WeekdayCards";
 import NavigationBar from "../../Components/NavigationBar/NavigationBar";
-import WeekdayCardsOnline from "../../Components/WeekdayCardsOnline/WeekdayCardsOnline";
 
 function Outdoor(): JSX.Element {
   return (
@@ -10,7 +10,7 @@ function Outdoor(): JSX.Element {
         <span className={styles.headlinefirst}>Online </span>
         <span className={styles.headlinesecond}>Schedule</span>
       </p>
-      <WeekdayCardsOnline />
+      <WeekdayCards />
       <NavigationBar activeLink={"online"} />
     </div>
   );
