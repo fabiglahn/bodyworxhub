@@ -45,7 +45,7 @@ function LoginForm() {
         <input
           type="submit"
           value="login"
-          className={styles.logintext}
+          className={styles.loginText}
           disabled={!validateForm()}
         />
         <input

@@ -7,8 +7,8 @@ function Outdoor(): JSX.Element {
   return (
     <div className={styles.container}>
       <p className={styles.headline}>
-        <span className={styles.headlinefirst}>Outdoor </span>
-        <span className={styles.headlinesecond}>Schedule</span>
+        <span className={styles.headlineFirst}>Outdoor </span>
+        <span className={styles.headlineSecond}>Schedule</span>
       </p>
       <WeekdayCards />
       <NavigationBar activeLink={"outdoor"} />

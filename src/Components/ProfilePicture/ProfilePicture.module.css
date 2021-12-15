@@ -12,7 +12,7 @@
   position: relative;
 }
 
-.profilepic {
+.profilePic {
   border-radius: 50%;
   z-index: 10;
   width: 10rem;
