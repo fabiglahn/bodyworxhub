@@ -4,6 +4,7 @@ import LocationsIcon from "./assets/locations";
 import HomeIcon from "./assets/home";
 import OnlineIcon from "./assets/online";
 import ProfileIcon from "./assets/profile";
+import { Link } from "react-router-dom";
 
 type NavigationBarProps = {
   activeLink?: "home" | "outdoor" | "locations" | "online" | "profile";
@@ -12,7 +13,7 @@ type NavigationBarProps = {
 export default function NavigationBar({ activeLink }: NavigationBarProps) {
   return (
     <nav className={styles.navigationBar}>
-      <a href="./home">
+      <Link to="/home">
         <HomeIcon
           fill={
             activeLink === "home"
@@ -20,8 +21,8 @@ export default function NavigationBar({ activeLink }: NavigationBarProps) {
               : "var(--color-text-main)"
           }
         />
-      </a>
-      <a href="./outdoor">
+      </Link>
+      <Link to="/outdoor">
         <OutdoorIcon
           fill={
             activeLink === "outdoor"
@@ -29,7 +30,7 @@ export default function NavigationBar({ activeLink }: NavigationBarProps) {
               : "var(--color-text-main)"
           }
         />
-      </a>
+      </Link>
       <LocationsIcon
         fill={
           activeLink === "locations"
@@ -37,7 +38,7 @@ export default function NavigationBar({ activeLink }: NavigationBarProps) {
             : "var(--color-text-main)"
         }
       />
-      <a href="./online">
+      <Link to="/online">
         <OnlineIcon
           fill={
             activeLink === "online"
@@ -45,8 +46,8 @@ export default function NavigationBar({ activeLink }: NavigationBarProps) {
               : "var(--color-text-main)"
           }
         />
-      </a>
-      <a href="./profile">
+      </Link>
+      <Link to="/profile">
         <ProfileIcon
           fill={
             activeLink === "profile"
@@ -54,7 +55,7 @@ export default function NavigationBar({ activeLink }: NavigationBarProps) {
               : "var(--color-text-main)"
           }
         />
-      </a>
+      </Link>
     </nav>
   );
 }
