@@ -20,10 +20,6 @@ app.get("/api/users", async (_request, response) => {
   response.send(allUsers);
 });
 
-app.get("/api/hello", (_request, response) => {
-  response.json({ message: "Hello from server" });
-});
-
 // Serve production bundle
 app.use(express.static("dist"));
 
