@@ -15,7 +15,6 @@ function LoginForm() {
     const user: Partial<User> = { email, password };
     await verifyLogin(user);
     navigate("/home");
-    console.log(user);
   }
 
   function validateForm() {
