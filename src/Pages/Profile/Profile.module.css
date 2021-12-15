@@ -2,6 +2,9 @@
   display: grid;
   place-items: center;
   grid-template-rows: 15% 1fr 1fr;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  padding-bottom: 4rem;
 }
 
 .headline {
