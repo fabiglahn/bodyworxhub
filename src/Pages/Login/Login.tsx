@@ -6,7 +6,7 @@ import logo from "../../Assets/logo.png";
 function Login(): JSX.Element {
   return (
     <div className={styles.container}>
-      <img className={styles.logo} src={logo} />
+      <img className={styles.logo} src={logo} alt="Bodyworxhub Logo" />
       <LoginForm />
     </div>
   );
