@@ -11,14 +11,14 @@
   margin: 0;
 }
 
-.headlinefirst {
+.headlineFirst {
   font-size: 2.5rem;
   color: var(--color-primary);
   font-weight: 800;
   text-transform: uppercase;
 }
 
-.headlinesecond {
+.headlineSecond {
   font-size: 2.5rem;
   color: var(--color-primary-accent);
   font-weight: 800;

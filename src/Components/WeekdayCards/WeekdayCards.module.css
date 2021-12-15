@@ -9,7 +9,7 @@
   padding: 3rem;
 }
 
-.singlecard {
+.singleCard {
   display: grid;
   background-color: var(--color-primary-accent);
   border-radius: 1.5rem;
@@ -19,7 +19,7 @@
   text-transform: uppercase;
 }
 
-.singlecard::after {
+.singleCard::after {
   content: "";
   display: block;
   padding-bottom: 100%;

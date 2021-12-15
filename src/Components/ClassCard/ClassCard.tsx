@@ -2,8 +2,8 @@ import styles from "./ClassCard.module.css";
 
 function ClassCard() {
   return (
-    <div className={styles.singlecard}>
-      <h4 className={styles.coursename}>power circuit</h4>
+    <div className={styles.singleCard}>
+      <h4 className={styles.courseName}>power circuit</h4>
       <span className={styles.info}>
         <svg
           className={styles.icons}

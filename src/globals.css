@@ -54,3 +54,8 @@ p {
   color: var(--color-text-main);
   font-size: 1.25rem;
 }
+
+::placeholder {
+  color: var(--color-text-additional);
+  opacity: 1;
+}

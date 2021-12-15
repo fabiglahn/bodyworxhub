@@ -35,12 +35,12 @@
   column-gap: 2rem;
 }
 
-.stats_headline {
+.statsHeadline {
   color: var(--color-text-additional);
   font-size: 1.25rem;
 }
 
-.stats_numbers {
+.statsNumbers {
   color: var(--color-primary);
   font-weight: 600;
   font-size: 1.25rem;
