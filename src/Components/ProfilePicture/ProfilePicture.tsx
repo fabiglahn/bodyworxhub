@@ -7,8 +7,8 @@ function ProfilePicture() {
   return (
     <div className={styles.container}>
       <div className={styles.avatar}>
-        <img src={anna} className={styles.profilepic} />
-        <img src={camera} className={styles.camera} />
+        <img src={anna} alt="profile picture" className={styles.profilepic} />
+        <img src={camera} alt="add new picture" className={styles.camera} />
       </div>
     </div>
   );
