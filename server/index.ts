@@ -12,12 +12,12 @@ if (!process.env.MONGODB_URI) {
   throw new Error("No MongoDB URI available");
 }
 
-// Get all users
-app.get("/api/users", async (_request, response) => {
+// Get logged-in user
+app.get("/api/users/:email", async (request, response) => {
   const userCollection = getUserCollection();
-  const cursor = userCollection.find();
+  const cursor = userCollection.find({ email: request.params.email });
   const allUsers = await cursor.toArray();
-  response.send(allUsers);
+  response.send(allUsers[0]);
 });
 
 // Serve production bundle
