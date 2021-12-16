@@ -14,6 +14,7 @@ function LoginForm() {
 
     const user: Partial<User> = { email, password };
     await verifyLogin(user);
+    localStorage.setItem("Current user", email);
     navigate("/home");
   }
 
