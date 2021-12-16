@@ -1,14 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./WeekdayCards.module.css";
 
 function WeekdayCards() {
   return (
     <div className={styles.cards}>
-      <a href="/monday-outdoor">
+      <Link to="/monday-outdoor">
         <div className={styles.singleCard}>
           <h4 className={styles.day}>Monday</h4>
         </div>
-      </a>
+      </Link>
       <div className={styles.singleCard}>
         <h4 className={styles.day}>Tuesday</h4>
       </div>

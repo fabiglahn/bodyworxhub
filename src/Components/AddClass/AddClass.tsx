@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./AddClass.module.css";
 import Clock from "./assets/clock.svg";
 import Location from "./assets/location.svg";
@@ -27,9 +28,9 @@ export default function AddClass() {
                 <img src={Location} alt="Location Icon" /> {place}
               </span>
             </div>
-            <a href="./profile">
+            <Link to="/profile">
               <img src={Plus} alt="Add Icon" />
-            </a>
+            </Link>
           </div>
         </article>
       ))}
