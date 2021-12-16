@@ -8,7 +8,7 @@ function MondayOnline(): JSX.Element {
   return (
     <div className={styles.container}>
       <p className={styles.headline}>
-        <Link to="./Online" className={styles.arrow}>
+        <Link to="/Online" className={styles.arrow}>
           <span>←</span>
         </Link>
         <span className={styles.weekday}>Monday </span>
