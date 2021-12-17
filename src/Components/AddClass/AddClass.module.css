@@ -7,6 +7,17 @@
   padding: 1rem 2rem;
   justify-self: center;
   margin-bottom: 1rem;
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .courseName {
