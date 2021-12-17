@@ -17,7 +17,7 @@
   place-items: center;
   position: relative;
   text-transform: uppercase;
-  animation: fadein 2s;
+  animation: fadein 1s;
 }
 
 @keyframes fadein {
