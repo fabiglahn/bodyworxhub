@@ -8,21 +8,27 @@ function LoginForm() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     const user: Partial<User> = { email, password };
-    await verifyLogin(user);
-    localStorage.setItem("Current user", email);
-    navigate("/home");
+    verifyLogin(user)
+      .then(() => {
+        localStorage.setItem("Current user", email);
+        navigate("/home");
+      })
+      .catch((error) => {
+        setError(error);
+      });
   }
 
   function validateForm() {
     return email.trim().length > 0 && password.trim().length > 0;
   }
 
-  return (
+  const loginform = (
     <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.input}>
         <input
@@ -39,6 +45,7 @@ function LoginForm() {
           className={styles.password}
           onChange={(event) => setPassword(event.target.value)}
         />
+        <span className={styles.error}>{error}</span>
         <span className={styles.forgot}>Forgot your password?</span>
       </div>
       <label className={styles.submit}>
@@ -61,6 +68,8 @@ function LoginForm() {
       </div>
     </form>
   );
+
+  return loginform;
 }
 
 export default LoginForm;
