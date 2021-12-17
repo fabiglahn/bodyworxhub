@@ -78,3 +78,9 @@
   font-size: 1.4rem;
   font-weight: 600;
 }
+
+.error {
+  color: var(--color-primary-accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
